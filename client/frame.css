@@ -1,0 +1,75 @@
+body {
+  margin: 0; }
+
+p, input, button, a {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300; }
+
+.price {
+  text-align: right;
+  font-weight: 100;
+  font-size: 2em;
+  color: #cccccc;
+  font-family: "Roboto Slab"; }
+
+header {
+  width: 100%;
+  background: rgba(252, 252, 252, 0.98);
+  position: fixed; }
+  header h1 {
+    display: inline-block;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0.2em 1em;
+    cursor: default;
+    vertical-align: top;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  header #search-input {
+    vertical-align: top;
+    margin: 0.3em;
+    font-size: 1.9em;
+    width: 16em;
+    color: #606060;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #606060;
+    outline: none;
+    font-weight: 100; }
+  header #search-button {
+    background: #000;
+    height: 3.2em;
+    margin: 0.5em;
+    font-size: 0.8em;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: all, 0.2s; }
+  header #search-button:hover {
+    background: #606060; }
+
+#search-container {
+  margin-top: 5em;
+  padding: 0 2em; }
+  #search-container p {
+    margin-bottom: 0; }
+
+div.product-tile {
+  display: inline-block;
+  width: 12em;
+  padding: 3em 2em; }
+  div.product-tile span {
+    font-weight: 100; }
+  div.product-tile a {
+    color: #808080;
+    text-decoration: none; }
+  div.product-tile img {
+    width: 100%; }
+
+/*# sourceMappingURL=frame.css.map */
