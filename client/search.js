@@ -14,12 +14,14 @@ nlpthreads.init.push(function() {
         searchBox.addEventListener('change', keywordsUpdated, false);
         searchButton.addEventListener('click', submitSearch, false);
 
+        searchBox.focus();
+
         function keywordsUpdated() {
             nlpthreads.search.keywords = searchBox.value}
 
         function searchProsperent(keywords, callback) {
-            var url = 'http://api.shopstyle.com/api/v2/products?';
-            url += 'pid=' + shopsensePid;
+            var url = 'http://api.shopstyle.com/api/v2/products?cat=men';
+            url += '&pid=' + shopsensePid;
             url += '&fts=' + encodeURIComponent(keywords);
 
             nlpthreads.xhr({url: url, callback: callback, method: 'GET'});
